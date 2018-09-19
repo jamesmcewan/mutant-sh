@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mutant.sh</title>
+  <style>
+    :root {
+      --light-bg-color: #fffef2;
+      --light-purple: #BD10E0;
+      --pale-purple: #E6D1EA;
+      --mid-purple: #33003D;
+      --dark-purple: #1E0025;
+      --orange: #FFB300;
+      --yellow: #F8E71C;
+      --pale-green: #D6DCCF;
+    }
+
+    body {
+      background: linear-gradient(var(--mid-purple),
+      var(--dark-purple));
+      display: grid;
+      grid-template-columns: 1fr minmax(400px, 800px) 1fr;
+    }
+
+    .container {
+      grid-column-start: 2;
+      display: grid;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      font-family: 'arial black', arial;
+      color: var(--pale-green);
+      text-decoration: none;
+      text-shadow: 0px 0px 5px black, 2px 0px 10px #DC384D, -2px 0px 10px #4287D8, 0px 0px 50px var(--mid-purple);
+      will-change: text-shadow;
+      transition: 0.5s text-shadow;
+    }
+
+    .fuzz {
+      color: var(--dark-purple);
+      background: var(--light-bg-color);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="fuzz">
+      Mutant.sh
+    </h1>
+
+  </div>
+</body>
+
+</html>
